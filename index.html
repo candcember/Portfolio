@@ -10,7 +10,9 @@
 <body>
     <header>
         <div id="banner-name">
+            <a href="#" id="banner-text-link">
             <h2>Chris Ember</h2>
+            </a>
         </div>
         <nav>
              <a href="#">About me</a>
@@ -19,10 +21,12 @@
         </nav>
     </header>
     <div id="home-container">
-        <div class="image-container" >
+        <div class="image-container">
+            <div class="zoom-container">
             <a href="#">
                 <img src="chris-photo.jpg" alt="photo of author Chris Ember" id="chris-photo">
             </a>
+            </div>
         <div id="home-text">
             <h1>Chris Ember</h1>
             <h2>Full Stack Web Developer</h2>
@@ -31,11 +35,22 @@
             <a href="#"><button type="button">VIEW MY PORTFOLIO</button></a>
             <a href="#"><button type="button">CONTACT ME</button></a>
         </div>
-            
-
         </div>
 
     </div>
+    <footer>
+        <h2>Contact</h2>
+        <form action="example.html" method="POST">
+            <input name="name" placeholder="Name" class="contact-form" id="form-name">
+            <br>
+            <br>
+            <input name="email" value="Email" class="contact-form">
+            <br>
+            <br>
+            <textarea name="message" rows="5 cols=400" class="contact-form">Message</textarea>
+        </form>
+    </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>
