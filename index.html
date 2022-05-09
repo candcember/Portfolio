@@ -5,25 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div id="banner-name">
-            <a href="#" id="banner-text-link">
-            <h2>Chris Ember</h2>
-            </a>
-        </div>
-        <nav>
-             <a href="#">About me</a>
-             <a href="#">Portfolio</a>
-             <a href="#">Contact me</a>
-        </nav>
-    </header>
-    <div id="home-container">
-        <div class="image-container">
+        <div id="home-container">
+           <div class="image-container">
+            <nav id="nav">
+                <a id="nav-1" href="#home-container">Home</a>
+                <a id="nav-2" href="#about-chris">About me</a>
+                <a id="nav-3" href="#">Portfolio</a>
+                <a id="nav-4" href="#contact">Contact me</a>
+           </nav>
             <div class="zoom-container">
-            <a href="#">
+            <a href="#about-chris">
                 <img src="chris-photo.jpg" alt="photo of author Chris Ember" id="chris-photo">
             </a>
             </div>
@@ -33,21 +30,45 @@
         </div>
         <div id="home-links-container">
             <a href="#"><button type="button">VIEW MY PORTFOLIO</button></a>
-            <a href="#"><button type="button">CONTACT ME</button></a>
+            <a href="#contact"><button type="button">CONTACT ME</button></a>
         </div>
         </div>
 
     </div>
+    <section id="about-chris">
+        <h1>About Chris</h1>
+        <p>I am a full stack web developer based in Scotland, United Kingdom.  I love challenge and .........</p>
+        <ul>
+            <p>Interests</p>
+            <li>Renewable energy</li>
+            <li>UI/UX</li>
+            <li>SpaceX</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <div class="skills">
+            <h2>HTML</h2>
+            <img src="html5.png" alt="HTML5 Logo">
+            <h2>CSS</h2>
+            <img src="css3.png" alt="CSS3 logo">
+            <h2>Javascript</h2>
+            <img src="javascript.png" alt="Javascript logo">
+            <img src="nodejs.png" alt="NodeJS logo">
+        </div>
+    </section>
     <footer>
-        <h2>Contact</h2>
+        <h2>Contact Chris</h2>
         <form action="example.html" method="POST">
             <input name="name" placeholder="Name" class="contact-form" id="form-name">
             <br>
             <br>
-            <input name="email" value="Email" class="contact-form">
+            <input name="email" placeholder="Email" class="contact-form">
             <br>
             <br>
-            <textarea name="message" rows="5 cols=400" class="contact-form">Message</textarea>
+            <textarea placeholder="Message" name="message" rows="5 cols=400" class="contact-form"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Send" id="send-button">
         </form>
     </footer>
     <script src="script.js"></script>

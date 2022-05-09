@@ -1,52 +1,31 @@
 * {
-    font-family: 'Abril Fatface', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 0;
-}
-
-header {
-    display: flex;    
+    box-sizing: border-box;
     width: 100%;
-    min-height: 50px;
-    background-color: rgb(0,128, 255);
-    border-bottom: 2px solid darkblue;
-    justify-content: space-between;
-}
-
-#banner-name {
-
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    color: white;
-    font-size: 1.3em;  
-}
-
-#banner-text-link {
-    text-decoration: none;
-    color: white;
-}
-
-#banner-text-link:hover {
-    color: darkgray;
 }
 
 
 nav {
     display: flex;
-    justify-content: space-between;
-    margin-right: 50px;
+    justify-content: space-around;
+    
+    height: 30px;
+    width: 100%;
+   
     align-items: center;
+    font-family: 'Abril Fatface', cursive; 
 }
+
 
 nav a {
     text-decoration: none;
     color: white;
     justify-content: space-between;
     padding: 20px;
-    font-size: 1.3em;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -62,6 +41,7 @@ nav a:hover {
     flex-direction: column;
     position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .image-container {
@@ -77,7 +57,9 @@ nav a:hover {
     ;
     width: 150px;
     height: 200px;
-    margin: 80px auto 0px auto;           
+    margin: 100px auto 0px auto; 
+    padding-top: 50px;
+              
 }
 
 #chris-photo {
@@ -108,8 +90,10 @@ nav a:hover {
 
 #home-links-container {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 35% 0px 35%;
+    justify-content: space-around;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 30px;
 }
 
 button {
@@ -125,12 +109,25 @@ button:hover {
     color: rgb(0,128, 255);
 }
 
+#about-chris {
+    background-color: rgb(60, 60, 60);
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    width: 100%;
+}
+
+#about-chris h1 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 footer {
     background-color: rgb(40,40,40);
     color: white;
     text-align: center;    
     width: 100%;
-    height: 300px;
+    height: 400px;
     padding-top: 10px;
 }
 
@@ -151,6 +148,18 @@ form {
 	width: 100%;
 }
 
+#send-button {
+    background-color: rgb(110, 110, 110);
+    border: 1px solid orange;
+    color: orange;
+    text-align: center;
+    width: 10%;
+}
+
+#send-button:hover {
+    cursor: pointer;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(160, 160, 160);
     opacity: 1; /* Firefox */
@@ -163,6 +172,95 @@ form {
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: rgb(160, 160, 160);
   }
+
+  #skills {
+      width: 100%;
+      background-color: rgb(60, 60, 60);
+      position: relative;
+      padding: 20px;
+      color: white;
+      
+  }
+
+  #skills-banner {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    
+  }
+
+  .skills h2 {
+      border-bottom: 1.5px solid white;
+      
+  }
+
+  .skills img {
+      height: 100px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  @media only screen and (max-width: 640px) {
+    nav {
+        display: grid;
+        height: 80px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background-color: black;
+        padding-left: 10px;
+        
+        
+    }
+    #nav-1 {
+        grid-column-start: 0;
+        grid-column-end: 1;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+
+    #nav-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+
+    #nav-3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+
+    #nav-4 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 0;
+        grid-row-end: 1;
+        
+    }
+
+    form {
+        width: 70%;
+        height: 50px;
+        margin: 0 auto;
+        
+    }
+
+
+  }
+
+  
 
 
     
